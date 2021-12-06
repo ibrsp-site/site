@@ -1,34 +1,45 @@
 .responsive {
     width: 40%;
     height: auto;
-  }
+}
 
-  .img_social_media {
+.img_social_media {
     width: 30%;
     height: auto;
     max-width: 100px;
-  }
+}
 
-  .texto_social_media {
+.texto_social_media {
     text-align: left;
-  }
+}
 
-  .instagram {
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    text-align: center;
-    border-radius: 40px;
-    color: #fff;
-    font-size: 220px;
-    line-height: 250px;
-    vertical-align: middle;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-  }
-
-  p {
+p {
     font-size: smaller;
-    
-  }
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+    /* Probably some parent element that limits the img width */
+    .responsive {
+        width: 40px;
+        min-width: 120px;
+        height: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    /* Probably some parent element that limits the img width */
+    .responsive {
+        width: 40%;
+        max-width: 150px;
+        height: auto;
+    }
+}
+
+@media (min-width: 500px) {
+    /* Probably some parent element that limits the img width */
+    .responsive {
+        max-width: 300px;
+        width: 40%;
+        height: auto;
+    }
+}
