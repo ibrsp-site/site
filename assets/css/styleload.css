@@ -1,0 +1,119 @@
+    html,
+    body {
+        margin: 0px;
+        height: 100%;
+        background-color: transparent;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 72px;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 50px;
+    }
+    
+    h2 {
+        color: white;
+        font-size: 52px;
+        font-weight: bold;
+        text-align: right;
+        margin-right: 50px;
+    }
+    
+    h4 {
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    
+    h5 {
+        color: white;
+        font-weight: bold;
+        font-size: 28px;
+    }
+    
+    .box {
+        background: transparent;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+    
+    .imagem {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    .links_redes_sociais {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+    }
+    
+    .responsive {
+        width: 70%;
+        height: auto;
+        opacity: 0.8;
+        border-radius: 5%;
+        filter: drop-shadow(6px 6px 6px rgb(8, 8, 8));
+    }
+    
+    .whatsapp_igreja {
+        width: 30%;
+        height: auto;
+        opacity: 0.8;
+        border-radius: 5%;
+        margin-left: 380px;
+        filter: drop-shadow(6px 6px 6px rgb(8, 8, 8));
+    }
+    
+    .logo_social {
+        width: 60px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: center;
+    }
+    
+    .logo_whatsapp {
+        width: 50%;
+        height: auto;
+    }
+    
+    .clock {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    .imagem_rodape {
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+    }
+    
+    .img_pregador {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-position: center;
+        object-fit: cover;
+        float: left;
+        filter: drop-shadow(3px 3px 3px rgb(8, 8, 8));
+        padding: 5px;
+        margin: -90px 0px 0px 0;
+    }
+    
+    .titulo_pregador {
+        color: white;
+        font-weight: bold;
+        font-size: 48px;
+        margin-left: 10px;
+        margin-top: -90px;
+    }

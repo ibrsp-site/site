@@ -1,0 +1,252 @@
+.grid-tela {
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin: 0 auto;
+    top: 0px;
+    grid-template-columns: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 0.6fr 3.5fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: column dense;
+    align-content: space-between;
+    grid-template-areas: "heder heder heder" "Logo Contador Contador" "Midias Midias Midias";
+}
+
+.heder {
+    grid-area: heder;
+    background-color: rgba(253, 253, 253, 0.1);
+}
+
+.Contador {
+    grid-area: Contador;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 253, 253, 0.03);
+}
+
+.Logo {
+    grid-area: Logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 253, 253, 0.03);
+}
+
+.Midias {
+    grid-area: Midias;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: table;
+    align-items: center;
+}
+
+.grid_midias {
+    display: grid;
+    grid-template-columns: 0.7fr 1.1fr 1.4fr 0.8fr;
+    grid-template-rows: 0.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: column dense;
+    align-content: space-between;
+    grid-template-areas: "midia_01 midia_02 midia_03 midia_04";
+    margin-left: 20px;
+}
+
+.midia_01 {
+    grid-area: midia_01;
+    display: flex;
+    align-items: center;
+}
+
+.midia_02 {
+    grid-area: midia_02;
+    display: flex;
+    align-items: center;
+    vertical-align: text-bottom;
+}
+
+.midia_03 {
+    grid-area: midia_03;
+    display: flex;
+    align-items: center;
+    vertical-align: text-bottom;
+}
+
+.midia_04 {
+    grid-area: midia_04;
+    display: flex;
+    align-items: center;
+    vertical-align: text-bottom;
+}
+
+.grid_contador {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 100%;
+    max-height: 105%;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    top: 0px;
+    gap: 0px 0px;
+    grid-auto-flow: column dense;
+    align-content: space-between;
+    grid-template-areas: "contador_01 contador_02" "contador_03 contador_04";
+}
+
+.contador_01 {
+    grid-area: contador_01;
+    display: flex;
+    align-items: center;
+}
+
+.contador_02 {
+    grid-area: contador_02;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contador_03 {
+    grid-area: contador_03;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.contador_04 {
+    grid-area: contador_04;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+}
+
+
+/* Grid */
+
+
+/*
+.grid {
+    display: grid;
+}
+
+.grid-template-0 {
+    display: grid;
+    grid-template-columns: 300px auto 50px;
+    grid-template-rows: 300px auto 150px;
+    grid-template-areas: "header header header" "main main . " "footer footer footer";
+}
+
+.grid-midias-sociais {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "header header " "main main" "footer footer";
+}
+
+.grid-whatsapp {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "." ".";
+}
+
+.grid-template-1 {
+    grid-template: 200px 1fr / 600px 1fr 200px;
+}
+
+.grid-template-2 {
+    grid-template: "logo nav nav" 50px "sidenav content advert" 150px "sidenav footer footer" 100px / 100px 1fr 50px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.advert {
+    grid-area: advert;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+.item {
+    margin: 5px;
+    background: tomato;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.item_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.item_left {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+.grid {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin: 0 auto;
+    top: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: normal;
+}
+
+body {
+    font-family: monospace;
+    color: #333;
+    margin: 0px;
+}
+
+body>div:nth-of-type(even) {
+    background: rgba(0, 0, 0, .03);
+}
+
+body>div>img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+*/
